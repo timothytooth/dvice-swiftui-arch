@@ -53,6 +53,7 @@ class ExampleFlowCoordinator: ParentFlowCoordinator, Navigable {
         guard let self = self else { return }
         
 //        self.navigationSubject.send(.back)
+        self.presenter?.dismiss(completion: nil)
         self.endFlow()
     }
 }
