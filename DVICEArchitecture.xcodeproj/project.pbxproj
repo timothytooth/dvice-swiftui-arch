@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBFA6A7626B1A44E00A53E95 /* DVICEArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6A7526B1A44E00A53E95 /* DVICEArchitectureApp.swift */; };
+		DBFA6A7826B1A44E00A53E95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6A7726B1A44E00A53E95 /* ContentView.swift */; };
+		DBFA6A7A26B1A45200A53E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFA6A7926B1A45200A53E95 /* Assets.xcassets */; };
+		DBFA6A7D26B1A45200A53E95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFA6A7C26B1A45200A53E95 /* Preview Assets.xcassets */; };
+		DBFA6A8826B1A45200A53E95 /* DVICEArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6A8726B1A45200A53E95 /* DVICEArchitectureTests.swift */; };
+		DBFA6A9326B1A45200A53E95 /* DVICEArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6A9226B1A45200A53E95 /* DVICEArchitectureUITests.swift */; };
+		DBFA6AAE26B1A48000A53E95 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA126B1A48000A53E95 /* FlowCoordinator.swift */; };
+		DBFA6AAF26B1A48000A53E95 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA226B1A48000A53E95 /* Presenter.swift */; };
+		DBFA6AB026B1A48000A53E95 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA326B1A48000A53E95 /* Router.swift */; };
+		DBFA6AB126B1A48000A53E95 /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA426B1A48000A53E95 /* Navigable.swift */; };
+		DBFA6AB226B1A48000A53E95 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA626B1A48000A53E95 /* ViewFactory.swift */; };
+		DBFA6AB326B1A48000A53E95 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA726B1A48000A53E95 /* NavigationHelper.swift */; };
+		DBFA6AB426B1A48000A53E95 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AA926B1A48000A53E95 /* ExampleView.swift */; };
+		DBFA6AB526B1A48000A53E95 /* ExampleDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AAA26B1A48000A53E95 /* ExampleDirector.swift */; };
+		DBFA6AB626B1A48000A53E95 /* ExampleViewTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AAB26B1A48000A53E95 /* ExampleViewTranslator.swift */; };
+		DBFA6AB726B1A48000A53E95 /* ExampleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AAC26B1A48000A53E95 /* ExampleProtocols.swift */; };
+		DBFA6AB826B1A48000A53E95 /* ExampleFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AAD26B1A48000A53E95 /* ExampleFlowCoordinator.swift */; };
+		DBFA6ABB26B1A61100A53E95 /* ExampleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6ABA26B1A61100A53E95 /* ExampleInteractor.swift */; };
+		DBFA6AC326B1C2FC00A53E95 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA6AC226B1C2FC00A53E95 /* NavigationPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBFA6A8426B1A45200A53E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBFA6A6A26B1A44E00A53E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBFA6A7126B1A44E00A53E95;
+			remoteInfo = DVICEArchitecture;
+		};
+		DBFA6A8F26B1A45200A53E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBFA6A6A26B1A44E00A53E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBFA6A7126B1A44E00A53E95;
+			remoteInfo = DVICEArchitecture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBFA6A7226B1A44E00A53E95 /* DVICEArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVICEArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA6A7526B1A44E00A53E95 /* DVICEArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVICEArchitectureApp.swift; sourceTree = "<group>"; };
+		DBFA6A7726B1A44E00A53E95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBFA6A7926B1A45200A53E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBFA6A7C26B1A45200A53E95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBFA6A7E26B1A45200A53E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA6A8326B1A45200A53E95 /* DVICEArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVICEArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA6A8726B1A45200A53E95 /* DVICEArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVICEArchitectureTests.swift; sourceTree = "<group>"; };
+		DBFA6A8926B1A45200A53E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA6A8E26B1A45200A53E95 /* DVICEArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVICEArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA6A9226B1A45200A53E95 /* DVICEArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVICEArchitectureUITests.swift; sourceTree = "<group>"; };
+		DBFA6A9426B1A45200A53E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA6AA126B1A48000A53E95 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		DBFA6AA226B1A48000A53E95 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		DBFA6AA326B1A48000A53E95 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DBFA6AA426B1A48000A53E95 /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
+		DBFA6AA626B1A48000A53E95 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		DBFA6AA726B1A48000A53E95 /* NavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		DBFA6AA926B1A48000A53E95 /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		DBFA6AAA26B1A48000A53E95 /* ExampleDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDirector.swift; sourceTree = "<group>"; };
+		DBFA6AAB26B1A48000A53E95 /* ExampleViewTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewTranslator.swift; sourceTree = "<group>"; };
+		DBFA6AAC26B1A48000A53E95 /* ExampleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleProtocols.swift; sourceTree = "<group>"; };
+		DBFA6AAD26B1A48000A53E95 /* ExampleFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFlowCoordinator.swift; sourceTree = "<group>"; };
+		DBFA6ABA26B1A61100A53E95 /* ExampleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractor.swift; sourceTree = "<group>"; };
+		DBFA6AC226B1C2FC00A53E95 /* NavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBFA6A6F26B1A44E00A53E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A8026B1A45200A53E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A8B26B1A45200A53E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBFA6A6926B1A44E00A53E95 = {
+			isa = PBXGroup;
+			children = (
+				DBFA6A7426B1A44E00A53E95 /* DVICEArchitecture */,
+				DBFA6A8626B1A45200A53E95 /* DVICEArchitectureTests */,
+				DBFA6A9126B1A45200A53E95 /* DVICEArchitectureUITests */,
+				DBFA6A7326B1A44E00A53E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBFA6A7326B1A44E00A53E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6A7226B1A44E00A53E95 /* DVICEArchitecture.app */,
+				DBFA6A8326B1A45200A53E95 /* DVICEArchitectureTests.xctest */,
+				DBFA6A8E26B1A45200A53E95 /* DVICEArchitectureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBFA6A7426B1A44E00A53E95 /* DVICEArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6AB926B1A5FD00A53E95 /* Interactors */,
+				DBFA6AA826B1A48000A53E95 /* ExampleModule */,
+				DBFA6AA526B1A48000A53E95 /* Helpers */,
+				DBFA6AA026B1A48000A53E95 /* Protocols */,
+				DBFA6A7526B1A44E00A53E95 /* DVICEArchitectureApp.swift */,
+				DBFA6A7726B1A44E00A53E95 /* ContentView.swift */,
+				DBFA6A7926B1A45200A53E95 /* Assets.xcassets */,
+				DBFA6A7E26B1A45200A53E95 /* Info.plist */,
+				DBFA6A7B26B1A45200A53E95 /* Preview Content */,
+			);
+			path = DVICEArchitecture;
+			sourceTree = "<group>";
+		};
+		DBFA6A7B26B1A45200A53E95 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6A7C26B1A45200A53E95 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBFA6A8626B1A45200A53E95 /* DVICEArchitectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6A8726B1A45200A53E95 /* DVICEArchitectureTests.swift */,
+				DBFA6A8926B1A45200A53E95 /* Info.plist */,
+			);
+			path = DVICEArchitectureTests;
+			sourceTree = "<group>";
+		};
+		DBFA6A9126B1A45200A53E95 /* DVICEArchitectureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6A9226B1A45200A53E95 /* DVICEArchitectureUITests.swift */,
+				DBFA6A9426B1A45200A53E95 /* Info.plist */,
+			);
+			path = DVICEArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		DBFA6AA026B1A48000A53E95 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6AA126B1A48000A53E95 /* FlowCoordinator.swift */,
+				DBFA6AA226B1A48000A53E95 /* Presenter.swift */,
+				DBFA6AA326B1A48000A53E95 /* Router.swift */,
+				DBFA6AA426B1A48000A53E95 /* Navigable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DBFA6AA526B1A48000A53E95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6AA626B1A48000A53E95 /* ViewFactory.swift */,
+				DBFA6AA726B1A48000A53E95 /* NavigationHelper.swift */,
+				DBFA6AC226B1C2FC00A53E95 /* NavigationPresenter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBFA6AA826B1A48000A53E95 /* ExampleModule */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6AA926B1A48000A53E95 /* ExampleView.swift */,
+				DBFA6AAA26B1A48000A53E95 /* ExampleDirector.swift */,
+				DBFA6AAB26B1A48000A53E95 /* ExampleViewTranslator.swift */,
+				DBFA6AAC26B1A48000A53E95 /* ExampleProtocols.swift */,
+				DBFA6AAD26B1A48000A53E95 /* ExampleFlowCoordinator.swift */,
+			);
+			path = ExampleModule;
+			sourceTree = "<group>";
+		};
+		DBFA6AB926B1A5FD00A53E95 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA6ABA26B1A61100A53E95 /* ExampleInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBFA6A7126B1A44E00A53E95 /* DVICEArchitecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFA6A9726B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitecture" */;
+			buildPhases = (
+				DBFA6A6E26B1A44E00A53E95 /* Sources */,
+				DBFA6A6F26B1A44E00A53E95 /* Frameworks */,
+				DBFA6A7026B1A44E00A53E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DVICEArchitecture;
+			productName = DVICEArchitecture;
+			productReference = DBFA6A7226B1A44E00A53E95 /* DVICEArchitecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBFA6A8226B1A45200A53E95 /* DVICEArchitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFA6A9A26B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitectureTests" */;
+			buildPhases = (
+				DBFA6A7F26B1A45200A53E95 /* Sources */,
+				DBFA6A8026B1A45200A53E95 /* Frameworks */,
+				DBFA6A8126B1A45200A53E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBFA6A8526B1A45200A53E95 /* PBXTargetDependency */,
+			);
+			name = DVICEArchitectureTests;
+			productName = DVICEArchitectureTests;
+			productReference = DBFA6A8326B1A45200A53E95 /* DVICEArchitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBFA6A8D26B1A45200A53E95 /* DVICEArchitectureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFA6A9D26B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitectureUITests" */;
+			buildPhases = (
+				DBFA6A8A26B1A45200A53E95 /* Sources */,
+				DBFA6A8B26B1A45200A53E95 /* Frameworks */,
+				DBFA6A8C26B1A45200A53E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBFA6A9026B1A45200A53E95 /* PBXTargetDependency */,
+			);
+			name = DVICEArchitectureUITests;
+			productName = DVICEArchitectureUITests;
+			productReference = DBFA6A8E26B1A45200A53E95 /* DVICEArchitectureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBFA6A6A26B1A44E00A53E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DBFA6A7126B1A44E00A53E95 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DBFA6A8226B1A45200A53E95 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DBFA6A7126B1A44E00A53E95;
+					};
+					DBFA6A8D26B1A45200A53E95 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DBFA6A7126B1A44E00A53E95;
+					};
+				};
+			};
+			buildConfigurationList = DBFA6A6D26B1A44E00A53E95 /* Build configuration list for PBXProject "DVICEArchitecture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBFA6A6926B1A44E00A53E95;
+			productRefGroup = DBFA6A7326B1A44E00A53E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBFA6A7126B1A44E00A53E95 /* DVICEArchitecture */,
+				DBFA6A8226B1A45200A53E95 /* DVICEArchitectureTests */,
+				DBFA6A8D26B1A45200A53E95 /* DVICEArchitectureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBFA6A7026B1A44E00A53E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA6A7D26B1A45200A53E95 /* Preview Assets.xcassets in Resources */,
+				DBFA6A7A26B1A45200A53E95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A8126B1A45200A53E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A8C26B1A45200A53E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBFA6A6E26B1A44E00A53E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA6AB826B1A48000A53E95 /* ExampleFlowCoordinator.swift in Sources */,
+				DBFA6AB526B1A48000A53E95 /* ExampleDirector.swift in Sources */,
+				DBFA6A7826B1A44E00A53E95 /* ContentView.swift in Sources */,
+				DBFA6AB326B1A48000A53E95 /* NavigationHelper.swift in Sources */,
+				DBFA6A7626B1A44E00A53E95 /* DVICEArchitectureApp.swift in Sources */,
+				DBFA6AB626B1A48000A53E95 /* ExampleViewTranslator.swift in Sources */,
+				DBFA6AB026B1A48000A53E95 /* Router.swift in Sources */,
+				DBFA6AB726B1A48000A53E95 /* ExampleProtocols.swift in Sources */,
+				DBFA6AC326B1C2FC00A53E95 /* NavigationPresenter.swift in Sources */,
+				DBFA6AAF26B1A48000A53E95 /* Presenter.swift in Sources */,
+				DBFA6ABB26B1A61100A53E95 /* ExampleInteractor.swift in Sources */,
+				DBFA6AB426B1A48000A53E95 /* ExampleView.swift in Sources */,
+				DBFA6AAE26B1A48000A53E95 /* FlowCoordinator.swift in Sources */,
+				DBFA6AB226B1A48000A53E95 /* ViewFactory.swift in Sources */,
+				DBFA6AB126B1A48000A53E95 /* Navigable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A7F26B1A45200A53E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA6A8826B1A45200A53E95 /* DVICEArchitectureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBFA6A8A26B1A45200A53E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA6A9326B1A45200A53E95 /* DVICEArchitectureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBFA6A8526B1A45200A53E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBFA6A7126B1A44E00A53E95 /* DVICEArchitecture */;
+			targetProxy = DBFA6A8426B1A45200A53E95 /* PBXContainerItemProxy */;
+		};
+		DBFA6A9026B1A45200A53E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBFA6A7126B1A44E00A53E95 /* DVICEArchitecture */;
+			targetProxy = DBFA6A8F26B1A45200A53E95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DBFA6A9526B1A45200A53E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBFA6A9626B1A45200A53E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBFA6A9826B1A45200A53E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DVICEArchitecture/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DVICEArchitecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBFA6A9926B1A45200A53E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DVICEArchitecture/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DVICEArchitecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBFA6A9B26B1A45200A53E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVICEArchitectureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DVICEArchitecture.app/DVICEArchitecture";
+			};
+			name = Debug;
+		};
+		DBFA6A9C26B1A45200A53E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVICEArchitectureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DVICEArchitecture.app/DVICEArchitecture";
+			};
+			name = Release;
+		};
+		DBFA6A9E26B1A45200A53E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVICEArchitectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DVICEArchitecture;
+			};
+			name = Debug;
+		};
+		DBFA6A9F26B1A45200A53E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DVICEArchitectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.warbyparker.DVICEArchitectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DVICEArchitecture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBFA6A6D26B1A44E00A53E95 /* Build configuration list for PBXProject "DVICEArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA6A9526B1A45200A53E95 /* Debug */,
+				DBFA6A9626B1A45200A53E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFA6A9726B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA6A9826B1A45200A53E95 /* Debug */,
+				DBFA6A9926B1A45200A53E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFA6A9A26B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA6A9B26B1A45200A53E95 /* Debug */,
+				DBFA6A9C26B1A45200A53E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFA6A9D26B1A45200A53E95 /* Build configuration list for PBXNativeTarget "DVICEArchitectureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA6A9E26B1A45200A53E95 /* Debug */,
+				DBFA6A9F26B1A45200A53E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBFA6A6A26B1A44E00A53E95 /* Project object */;
+}
