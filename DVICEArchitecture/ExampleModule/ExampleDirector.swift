@@ -23,7 +23,7 @@ class ExampleDirector: ExampleDirectorInterface, ObservableObject {
             interactor.getData()
                 .sink {
                     // Do something with the data
-                    self.viewModel = self.translator.transformError()
+                    self.viewModel = self.translator.transformError(viewModel: self.viewModel)
                 }
                 .store(in: &cancellables)
         case .closeButtonTapped:

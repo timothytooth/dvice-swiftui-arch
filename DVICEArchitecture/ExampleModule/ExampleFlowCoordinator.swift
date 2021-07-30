@@ -1,6 +1,5 @@
 import Foundation
 import Combine
-import UIKit
 
 class ExampleFlowCoordinator: ParentFlowCoordinator, Navigable {
     weak var parentCoordinator: ParentFlowCoordinator?
